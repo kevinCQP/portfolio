@@ -187,6 +187,10 @@ transform: scale(1.1);
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.stacks{
+    width: 90%;
+    height: auto;
+}
 .icons .icons__tech{
     width: 100px;
     height: auto;
@@ -219,14 +223,7 @@ transform: scale(1.1);
     text-align: center;
     
 }
-.form{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid  red;
-}
+
 .portfolio__contend{
     width: 250px;
     display: flex;
@@ -255,4 +252,19 @@ transform: scale(1.1);
 .form{
     width: 50%;
     height: auto;
+    color: #000;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid  red;
+    
+}
+
+.contain__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

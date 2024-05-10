@@ -39,7 +39,7 @@ a {
 .btn {
     background-color: transparent;
     border: none;
-    font-size: 45px;
+    font-size: 1.8rem;
     color: #fff;
 }
 ul{
@@ -83,6 +83,7 @@ width: 100px;
 }*/
 .header__logo{
     font-weight: 900;
+    font-size: 1.8rem;
 }
 
 @media (max-width: 768px){
@@ -109,7 +110,7 @@ width: 100px;
     .list__link:hover{
         transform: scale(1.2);
     }
-    
+
     
 }
 button {
@@ -117,7 +118,11 @@ button {
     border: none;
     color: #fff;
     cursor: pointer;
+    font-size: 16px;
     
+}
+.header__btn__btn--close{
+    display: none;
 }
 .hero{
     min-height: 100vh;
@@ -134,7 +139,8 @@ button {
     gap: 50px;
 }
 .hero__img{
-    
+    display: flex;
+    align-items: center;
     width: 150px;
     height: auto;
     transform: scale(1);
@@ -187,9 +193,29 @@ transform: scale(1.1);
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .skills-tech {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill {
+    background-color: var(--bg-alt);
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    text-align: center;
+  }
 .stacks{
     width: 90%;
     height: auto;
+    margin-top: 50px;
 }
 .icons .icons__tech{
     width: 100px;
@@ -224,6 +250,7 @@ transform: scale(1.1);
     
 }
 
+
 .portfolio__contend{
     width: 250px;
     display: flex;
@@ -239,6 +266,12 @@ transform: scale(1.1);
     gap: 50px;
     flex-wrap: wrap;
 }
+
+.container_skill{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 .card__img .img{
     max-width: 100%;
     height: 150px;

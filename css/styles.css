@@ -4,14 +4,22 @@
 
 :root {
     --txt-primary: #ca5f31;
-    --bg: #f0f0f0;
-    --text: #222;
+    --bg-body: #222;
+    --text: #f0f0f0;
     --body-font: 'Inter', sans-serif;
+    --bg-body: #222;
+    --txt-body: #f0f0f0;
+    --header-height:60px;
+    --primary-color: cyan;
+
 }
 
-.dark {
-    --bg: #000;
-    --text: #f0f0f0;
+.light{
+    --bg-body: #fff;
+    --bg-alt: #f2f2f2;
+    --txt-body: #222;
+
+
 }
 
 html {
@@ -24,9 +32,10 @@ html {
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--bg-body);
+    color: var(--txt-body);
     margin: 0;
+    font-size: 1.4rem;
 }
 
 ul {
@@ -52,7 +61,7 @@ ul{
     width: 100%;
     height: 90px;
     z-index: 100;
-    border: 3px solid green;
+    border: 3px solid var(--txt-body);
     display: flex;
 }
 
@@ -62,7 +71,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: var(--bg-body);
 }
 .list{
     font-weight: 700;
@@ -87,15 +96,27 @@ width: 100px;
 }
 
 @media (max-width: 768px){
-    .header__menu {
+    .nav-menu {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         height: 100vh;
         width: 45%;
+        
         background-color: #333;
         transition: left .3s ease-in-out;
     }
+    .show-menu {
+        left: 0;/* Agrega una transición suave */
+    }
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        display: block;
+      }
+    
     .list{
         display: flex;
         flex-direction: column;
@@ -116,12 +137,12 @@ width: 100px;
 button {
     background: transparent;
     border: none;
-    color: #fff;
+    color: var(--txt-body);
     cursor: pointer;
     font-size: 16px;
     
 }
-.header__btn__btn--close{
+.btn-close{
     display: none;
 }
 .hero{
@@ -256,7 +277,7 @@ transform: scale(1.1);
     display: flex;
     position: relative;
     padding: 10px;
-    border: 5px solid #fff;
+    border: 5px solid var(--txt-body);
     border-radius: 10px;
 }
 .container{
@@ -292,12 +313,13 @@ transform: scale(1.1);
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 5px solid  red;
-    
+    border: 5px solid  var(--txt-body);
+    border-radius: 5px;
 }
 
 .contain__form{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }

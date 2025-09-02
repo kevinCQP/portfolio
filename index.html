@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolio</title>
-    
+    <link rel="hoja de estilo" tipo='texto/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -13,6 +13,9 @@
     <header class="header">
         <nav class="header__nav">  <!--navcontainer-->
          <a class="header__logo" href="">JS</a>
+         
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+           
 
            <div class="nav-menu">
             <button class="btn-close" type="button" aria-label="close menu">
@@ -54,44 +57,94 @@
         
         
     </header>
+    <section  class="container__img">
+        <img src="./assets/img/IA.png" alt="">
+         <div class="hero-content" id="typeWriter">
+          <h1 id="role">Desarrollador Frontend</h1>
+          <p>Experiencia con tecnologías HTML, CSS, JavaScript, React y Node.js</p>
+         </div>
+    </section>
     <main class="main">
         <section id="home" class="section hero">
             <div class="container">
                 <div class="hero__img"> 
-                    <img class="img__perfil"   src="./assets/img/perfil.jpg" alt="js" style="width: 150px; height: 150px;">
+                    <img class="img__perfil"   src="./assets/img/perfil.jpg" alt="js">
                 </div>
 
-                <div>
+                <div class="hero__data">
                     <h1 class="hero__title">Fullstack Developers   </h1>
                     <h2 class="hero__subtitle">Hola, soy</h2>
                     <p class="hero__text">Desarrollador fullstack, con experiencia en librerias como react, node.js, manejo de lenguajes de programacion como javascript, css</p>
-                    <div class="buttom_dowland">
-                        <button class="hero__btn">descargar cv</button>
-                    </div>
-                    
-                    
+                     <a href="cv.pdf" class="btn" download>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                       <polyline points="7 10 12 15 17 10"/>
+                       <line x1="12" y1="15" x2="12" y2="3"/>
+                       </svg>
+                      Descargar CV
+        </a>
+                     </div>
+            <div>
+                
+                   <div class="level-container">
+                   <div class="level-title">HTML</div>
+                   <div class="level-bar">
+                   <div class="level-fill html">50%</div>
+                  </div>
                 </div>
-               
-            </div>
+
+                <div class="level-container">
+                <div class="level-title">CSS</div>
+                 <div class="level-bar">
+                   <div class="level-fill css">60%</div>
+                    </div>
+                </div>
+
+                  <div class="level-container">
+                   <div class="level-title">JavaScript</div>
+                    <div class="level-bar">
+                    <div class="level-fill js">50%</div>
+                    </div>
+                    </div>
+               </div>
+           
 
 
 
            
 
            </section>
+
+           <div class="tecno">
+             <div class="tecno__container">  
+                <div class="tecno__item_1"></div>
+                <div class="tecno__item_2"></div>
+                <div class="tecno__item_3"></div>
+             </div>
+            <div class="tecno__title">
+              <h1>Tecnologías</h1>
+            </div>
+             <div></div>
+             </div>
             <div class="stacks">
-                <section class="icons">
-                 <article>
-                    <img src="./assets/stacks/html.png" alt="html" style="width:150px; height:150px;">
+                <section class="icons"  id="carouselTrack">
+                 <article class="icon">   
+                  <i class="devicon-html5-plain"></i>
                  </article>
                  <article>
-                    <img src="./assets/stacks/css.png" alt="html" style="width:150px; height:150px;">
+                    <i class="devicon-css3-plain"></i>
                  </article>
                  <article>
-                    <img src="./assets/stacks/react.png" alt="html" style="width:150px; height:150px;">
+                    <i class="devicon-react-original"></i>
                  </article>
                  <article>
-                    <img src="./assets/stacks/nodejs (1).png" alt="html" style="width:150px; height:150px;">
+                    <i class="devicon-nodejs-plain"></i>
+                 </article>
+                 <article>
+                    <i class="devicon-postgresql-plain"></i>
+                 </article>
+                 <article>
+                    <i class="devicon-postman-plain"></i>
                  </article>
               </section>
           </div>
@@ -100,7 +153,7 @@
         <section  id="about"  class="section about">
             <h2 class="section__title">Sobre Mí</h2>
               
-            <div class="containers">
+            <div class="description">
              <p> Soy un desarrollador fullstack con experiencia en Node.js, React y JavaScript. Me apasiona crear aplicaciones web interactivas y funcionales. Tengo habilidades tanto en el desarrollo del lado del cliente como del servidor, lo que me permite crear soluciones completas y escalables. Disfruto trabajando en equipo y aprendiendo nuevas tecnologías para mejorar constantemente mis habilidades como desarrollador.</p>
             </div>
           </section>
@@ -109,10 +162,28 @@
             <!--<h2 class="section__title">Mis Trabajos</h2>-->
       
             <div class="container">
-               <div class="portfolio__contend">
+               <div class="portfolio__contend" id="uno">
                 <article class="card">
                     <div class="card__img">
-                        <img   class="imga"  src="https://media.contra.com/image/upload/ptwmlfnrzx7pyipb0efm" alt="pokedex"  ></div>
+                       <a href="#" target="_blank">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 512 512" fill="none">
+                        <!-- Círculo exterior -->
+                        <circle cx="256" cy="256" r="240" stroke="black" stroke-width="32" fill="white"/>
+    
+                         <!-- Mitad superior roja -->
+                          <path d="M256 16a240 240 0 0 1 240 240H16A240 240 0 0 1 256 16z" fill="red" stroke="black" stroke-width="16"/>
+    
+                           <!-- Línea divisoria -->
+                          <line x1="16" y1="256" x2="496" y2="256" stroke="black" stroke-width="32"/>
+    
+                           <!-- Círculo central negro -->
+                           <circle cx="256" cy="256" r="64" fill="white" stroke="black" stroke-width="32"/>
+    
+                             <!-- Círculo interior -->
+                                        <circle cx="256" cy="256" r="32" fill="white" stroke="black" stroke-width="16"/>
+                              </svg>
+                                   </a>
+                         </div>
                     <div class="description">
                         <h2>pokedex</h2>
                         <p>Una aplicación creada para obtener la informacion de un pokemon con sus caracteristicas, atributos, donde un usuario, pueda ingresar con su nombre  </p>
@@ -122,16 +193,37 @@
                                     <path fill="white" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.438 9.81 8.205 11.418.6.11.82-.255.82-.57 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.498-4.042-1.498-.546-1.385-1.333-1.754-1.333-1.754-1.088-.743.083-.728.083-.728 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.81 1.305 3.495.997.108-.774.417-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.307-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.572 11.572 0 0 1 3-.405c1.016 0 2.037.136 3 .405 2.29-1.552 3.295-1.23 3.295-1.23.645 1.653.24 2.87.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.62-5.475 5.92.43.37.81 1.096.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.21.685.825.565C20.565 21.804 24 17.31 24 12c0-6.63-5.37-12-12-12z"/>
                                 </svg>
                             </a>
+                             <a href="https://courageous-biscotti-168b8e.netlify.app" target="_blank">🌐 Ver Proyecto</a>
                         </div>
                     </div>
                 </article>
               
 
                </div>
-               <div class="portfolio__contend">
+               <div class="portfolio__contend" id="dos">
                 <article class="card">
                     <div class="card__img">
-                        <img   class="imga"  src="https://static.vecteezy.com/system/resources/previews/023/295/852/non_2x/weather-app-ui-ux-screens-for-smart-watches-flat-design-illustrations-vector.jpg" alt="pokedex"  ></div>
+                        <!-- Icono Clima: Sol + Nube (outline) -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="96"
+  height="96"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.6"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-label="Clima: sol con nube"
+>
+  <!-- Sol -->
+  <circle cx="8" cy="8" r="3" />
+  <path d="M8 2v2M8 12v2M2 8h2M12 8h2M3.5 3.5l1.4 1.4M3.5 12.5l1.4-1.4M12.5 3.5L11.1 4.9M12.5 12.5L11.1 11.1" />
+
+  <!-- Nube -->
+  <path d="M7 18h9a3 3 0 1 0 0-6 5 5 0 0 0-9.7 1A3.5 3.5 0 0 0 7 18z" />
+</svg>
+</div>
                     <div class="description">
                         <h2>climas</h2>
                         <p>Representacion en tiempo real de climas,  usando API de OpenWeatherMap, hacemos la utilizacion de hooks en react, uso  de importacion de componentes, para tener un codigo mas legible y mas mantenible</p>
@@ -147,20 +239,18 @@
               
 
                </div>
-               <div class="portfolio__contend">
+               <div class="portfolio__contend" id="tres">
                 <article class="card">
                     <div class="card__img">
-                        <img   class="imga"  src="https://repository-images.githubusercontent.com/267478731/0710e000-ca46-11eb-8936-430eab49b856" alt="pokedex"  ></div>
+                        
+                    </div>
                     <div class="description">
                         <h2>rick y morty</h2>
                         <p> Podemos visualizar de los diferentes episodios que son del 1 al 126 los estados de los diferentes personajes,  se realiza el consumo de una api</p>
                         <div>
-                            <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" rel="noopener noreferrer">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="white" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.438 9.81 8.205 11.418.6.11.82-.255.82-.57 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.498-4.042-1.498-.546-1.385-1.333-1.754-1.333-1.754-1.088-.743.083-.728.083-.728 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.81 1.305 3.495.997.108-.774.417-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.307-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.572 11.572 0 0 1 3-.405c1.016 0 2.037.136 3 .405 2.29-1.552 3.295-1.23 3.295-1.23.645 1.653.24 2.87.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.62-5.475 5.92.43.37.81 1.096.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.21.685.825.565C20.565 21.804 24 17.31 24 12c0-6.63-5.37-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
+             
+                              
+                              
                         
                         
                     </div>
@@ -172,26 +262,72 @@
             </div>
           </section>
       
-          <section  id="contact" class="section contact">
+          <section  id="contact" class="section_contact">
             <h2 class="section__title">Contactame</h2>
       
             <div class="contain__form">
                 <div class="form">
                     <form action="#" method="post">
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="nombre" required><br><br>
-                        
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
-                        
-                        <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+                        <div class="input-container">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" required><br><br>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br><br>
+                        </div>
+                        <div class="input-container">
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" id="telefono" name="telefono" required><br><br>
+                        </div>
+                        <div class="input-container">
+                            <label for="mensaje">Mensaje:</label><br>
+                             <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+                        </div>
                         
                         <input type="submit" value="Enviar">
                       </form>
                 </div>
-                
-      
+    <div class="social_icons">
+
+  <!-- WhatsApp -->
+       <div class="WhatsApp">
+            <a href="https://wa.me/51987654321" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="#25D366">
+             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 
+      11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 
+      2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 
+      11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zM6.403 
+      20.317c1.676.995 3.276 1.591 5.515 1.592 
+      5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 
+      0-9.887 4.434-9.889 9.884-.001 2.225.651 
+      3.891 1.746 5.64l-.999 3.648 3.619-.997zm11.387-5.464c-.074-.124-.272-.198-.57-.347s-1.758-.868-2.031-.967-.471-.149-.67.149-.767.967-.94 
+      1.165-.347.223-.644.074c-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 
+      0-.521.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 
+      2.095 3.2 5.076 4.487.709.306 1.262.489 
+      1.694.625.712.227 1.36.195 1.872.118.571-.085 
+      1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+      </svg>
+</a>
+
+       </div>
+  <!-- LinkedIn -->
+       <div class="LinkedIn">
+       <a href="https://www.linkedin.com/in/tuperfil" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="#0A66C2">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 
+             1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.049c.476-.9 
+             1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 
+             4.268 5.455v6.288zM5.337 7.433a2.062 2.062 0 11.001-4.123 
+             2.062 2.062 0 01-.001 4.123zM6.888 20.452H3.783V9h3.105v11.452zM22.225 
+             0H1.771C.792 0 0 .774 0 1.729v20.542C0 
+             23.227.792 24 1.771 24h20.451C23.2 24 
+             24 23.227 24 22.271V1.729C24 
+             .774 23.2 0 22.225 0z"/>
+  </svg>
+</a>
+            </div>
+            </div>
             </div>
           </section>
 

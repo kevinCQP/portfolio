@@ -104,4 +104,23 @@ function changeTheme (bool) {
     window.localStorage.removeItem('theme')
   }
 }
+const text = "Frontend Developer"; 
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("role").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 150); // velocidad (ms)
+  } else {
+    setTimeout(() => {
+      document.getElementById("role").innerHTML = "";
+      i = 0;
+      typeWriter(); // repetir el efecto
+    }, 2000); // tiempo de espera antes de reiniciar
+  }
+}
+typeWriter();
+
+
 

@@ -123,4 +123,64 @@ function typeWriter() {
 typeWriter();
 
 
+  const clouds = document.querySelectorAll('.cloud');
+  
+  
+ 
+  let cloudPositions = Array.from(clouds).map(() => Math.random() * window.innerHeight);
+
+  function animate() {
+    clouds.forEach((cloud, i) => {
+      cloudPositions[i] += 1.5; // velocidad de las nubes
+      if (cloudPositions[i] > window.innerHeight + 200) {
+        cloudPositions[i] = -200;
+        cloud.style.left = Math.random() * 90 + '%'; // nueva posición horizontal aleatoria
+      }
+      cloud.style.bottom = cloudPositions[i] + 'px';
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+   // Seleccionamos todos los paracaídas
+const parachutes = document.querySelectorAll('.parachutist');
+
+// Inicializamos posiciones aleatorias
+let parachuteData = Array.from(parachutes).map(() => ({
+  x: Math.random() * window.innerWidth,  // posición horizontal
+  y: Math.random() * -window.innerHeight, // posición vertical inicial (fuera de pantalla)
+  speedY: Math.random() * 1.5 + 0.5,      // velocidad de caída
+  speedX: Math.random() * 0.5 - 0.25,     // desplazamiento lateral (diagonal)
+  swing: Math.random() * 2 + 1,           // amplitud de oscilación
+  angle: Math.random() * 360              // ángulo para la oscilación
+}));
+
+function animateParachutes() {
+  parachuteData.forEach((data, i) => {
+    const parachute = parachutes[i];
+
+    // Actualizamos las posiciones
+    data.y += data.speedY;
+    data.x += data.speedX;
+    data.angle += 0.03; // velocidad de oscilación
+
+    // Movimiento oscilante
+    const offsetX = Math.sin(data.angle) * data.swing;
+
+    // Si el paracaídas sale de la pantalla, reiniciamos su posición arriba
+    if (data.y > window.innerHeight + 100) {
+      data.y = -100;
+      data.x = Math.random() * window.innerWidth;
+    }
+
+    // Aplicamos las transformaciones
+    parachute.style.transform = `translate(${data.x + offsetX}px, ${data.y}px)`;
+  });
+
+  requestAnimationFrame(animateParachutes);
+}
+
+animateParachutes();
+
 
